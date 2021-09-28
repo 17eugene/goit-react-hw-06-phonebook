@@ -7,9 +7,6 @@ import Filter from "./Filter/Filter";
 import "./index.css";
 
 function App() {
-  // const [contacts, setContacts] = useState([]);
-  // const [filter, setFilter] = useState("");
-
   // useEffect(() => {
   //   // localStorage.setItem("contacts", JSON.stringify(contacts));
   //   const parsedData = JSON.parse(localStorage.getItem("contacts"));
@@ -24,44 +21,6 @@ function App() {
   //   localStorage.setItem("contacts", JSON.stringify(contacts));
   // });
 
-  // const formSubmitHandler = (data) => {
-  //   // data - объект, состоящий из имени номера, которые прокинули из формы.
-  //   let newContact = {
-  //     id: shortid.generate(),
-  //     ...data,
-  //   };
-
-  //   if (
-  //     contacts.find(
-  //       (contact) =>
-  //         contact.number === data.number ||
-  //         contact.name.toLowerCase() === data.name.toLowerCase()
-  //     )
-  //   ) {
-  //     alert("Contact already exist!");
-  //     return;
-  //   }
-
-  //   setContacts([newContact, ...contacts]);
-  // };
-
-  // const deleteContact = (contactId) => {
-  //   setContacts(contacts.filter((contact) => contact.id !== contactId));
-  // };
-
-  // const filterChange = (e) => {
-  //   setFilter(e.currentTarget.value);
-  // };
-
-  // const getFiltredContacts = () => {
-  //   const normalized = filter.toLowerCase();
-
-  //   return contacts.filter((contact) =>
-  //     contact.name.toLowerCase().includes(normalized)
-  //   );
-  // };
-
-  // let filtredContacts = getFiltredContacts();
   return (
     <div>
       <AddForm />
